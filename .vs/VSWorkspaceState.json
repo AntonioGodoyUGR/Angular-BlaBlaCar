@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\busqueda-coches",
+    "\\src\\app\\car-profile",
+    "\\src\\app\\guards",
+    "\\src\\app\\home",
+    "\\src\\app\\login",
+    "\\src\\app\\logout",
+    "\\src\\app\\profile"
+  ],
+  "SelectedNode": "\\src\\app\\userfirestore.service.ts",
+  "PreviewInSolutionExplorer": false
+}

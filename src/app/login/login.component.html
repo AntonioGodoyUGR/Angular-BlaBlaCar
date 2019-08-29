@@ -1,0 +1,15 @@
+
+<div class="contenedor">
+<h1 *ngIf="authService.user | async">Bienvenido {{ (authService.user | async)?.nombre }}!</h1>
+ <h1 style="color:grey;"> Inicio de Sesión </h1>
+<div *ngIf="!(authService.user | async)">
+  <input class="casilla-formulario" type="text" [(ngModel)]="email" placeholder="email">
+  <br/>
+  <input class="casilla-formulario" type="password" [(ngModel)]="password" placeholder="contraseña">
+  <br/>
+  <button class="boton-registrar" (click)="login()" [disabled]="!email || !password">
+    Login
+  </button>
+
+</div>
+</div>

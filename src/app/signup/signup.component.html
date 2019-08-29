@@ -1,0 +1,30 @@
+<!--
+<h1 *ngIf="authService.user | async">Welcome {{ (authService.user | async)?.email }}!</h1>
+<div *ngIf="!(authService.user | async)">
+  <input type="text" [(ngModel)]="email" placeholder="email">
+  <input type="password" [(ngModel)]="password" placeholder="email">
+
+  <button (click)="signup()" [disabled]="!email || !password">
+    Login
+  </button>
+
+</div>
+-->
+<div class="contenedor">
+  <h1 style="color:grey;"> ¿Eres nuevo aquí?</h1>
+  <form (ngSubmit)="signup(newUserForm.value)" [formGroup]="newUserForm">
+    <input class="casilla-formulario" type="hidden" formControlName="id">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="nombre" placeholder="nombre">
+    <br/>
+    <input class="casilla-formulario" type="password" formControlName="contraseña" placeholder="contraseña">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="edad" placeholder="edad">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="sexo" placeholder="sexo">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="correo" placeholder="correo">
+    <br/>
+    <input class="boton-registrar" type="submit" [disabled]="!newUserForm.valid" value="Registrar">
+  </form>
+</div>

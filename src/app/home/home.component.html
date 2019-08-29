@@ -1,0 +1,337 @@
+
+<style>
+		.search-icon {
+			display: inline-block;
+		  color: #000;
+		  position: absolute;
+		  margin-top: 2px;
+		  margin-left: 3px;
+		  width: 12px;
+		  height: 12px;
+		  border: solid 1px currentColor;
+		  border-radius: 100%;
+		  -webkit-transform: rotate(-45deg);
+				  transform: rotate(-45deg);
+		}
+
+		.search-icon:before {
+		  content: '';
+		  position: absolute;
+		  top: 12px;
+		  left: 5px;
+		  height: 6px;
+		  width: 1px;
+		  background-color: currentColor;
+		}
+		body{
+			padding-top 80px;
+			text-decoration:none;
+		}
+		img{
+			max-width: 100%;
+			height:auto;
+		}
+
+		#cabecera-fija {
+			background: white;
+			color: lightblue;
+			height: 80px;
+
+			width: 100%;
+			left:0;
+			top:0;
+			position:fixed;
+			border-bottom: solid 1px lightgrey;
+		}
+		#cabecera-fija a{
+			color: lightblue;
+		}
+
+		/*propiedades del logotipo-->*/
+		#logotipo{
+			float: left;
+			padding: 15px 0 0 20px;
+		}
+		/*navegacion*/
+		nav {
+			float: right;
+			padding-right: 20px;
+		}
+		nav ul{
+			margin: 0;
+			list-style: none;
+			padding-right: 20px
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+		}
+		nav ul li a{
+			display: block;
+			padding: 0 7px;
+			text-decoration:none;
+		}
+		.imagen-principal{
+			background-image : url("../../assets/img/mujer_sonriendo.jpg");
+			background-size:cover;
+			height:600px;
+			text-decoration:none;
+			display:flex;
+			flex-direction: column;
+      text-align: center;
+			justify-content: flex-end;
+		}
+		.texto-uno{
+			color: white;
+			margin: 5px;
+      
+		}
+		.boton-buscar{
+			text-decoration: none;
+			padding: 10px;
+			color: white;
+			width:100px;
+      margin: 0 auto;
+			background:lightblue;
+			border-radius: 18px;
+			margin-top: 2em;
+			margin-bottom: 2em;
+      
+
+		}
+		/*Propiedades de loos elementos pertenecientes a publicar ofertas*/
+		.publicador-oferta {
+			display:flex;
+			height:300px;
+			justify-content: center;
+			margin-top: 35px;
+			margin-bottom: 35px;
+		}
+		.publicador {
+			display:block;
+			justify-content: center;
+			margin-top: 5em;
+		}
+		.titulo-publicador{
+			color:black;
+			margin-left: 1em;
+			margin-bottom:2em;
+		}
+		.boton-publicar{
+			text-decoration: none;
+			margin-left: 1em;
+			padding: 10px;
+			color: white;
+			background:lightblue;
+			border-radius: 18px;
+		}
+		
+		.viajes{
+			background:lightgreen;
+			color:white;	
+			height: 60px;
+			width: 100%;
+			left:0;
+			top:0;
+		}
+		.contenedor{
+			width: 980px;
+			justify-content:center;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.contenedor-dos{
+			width: 980px;
+			display: flex;
+			justify-content:space-around;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.titulo-viajes{
+			float:left;
+			padding: 5px 0px 5px 5em;
+		}
+		.mas-viajes{
+			float:right;
+			padding: 15px 5em 5px 0px;
+		}
+		.viajes-dos{
+			background:lightgreen;
+			color:white;	
+			height: 80px;
+			width: 100%;
+			left:0;
+			top:0;
+			margin-bottom:35px;
+			display:flex;
+			justify-content:center;
+		}
+		.boton-viajar{
+			text-decoration: none;
+			color: black;
+			background:white;
+			border-radius: 4px;
+			padding: 2px;
+			height:30px;
+
+		}
+		/*Propiedades del cuerpo y parte explicativa de la pagina*/
+		.titulo-cuerpo{
+			display:flex;
+			justify-content: center;
+			
+		}
+		.titulo-cuerpo-dos{
+			display:flex;
+			justify-content: center;
+			margin-bottom: 70px
+		}
+		.flotante_izquierda{
+			float:left;
+			height:100px;
+			padding-left:20px;
+			padding-right:20px;
+		}
+		.flotante_derecha{
+			float:right;
+			padding-left:20px;
+			padding-right:20px;
+		}
+		.primer-footer{
+			height:200px;
+			width: auto;
+			color:black;
+			background:lightgrey;
+		}
+		.segundo-footer{
+			height: 100px;
+			width: auto;
+			color: black;
+			background: grey;
+			font-size: 12px;
+			padding-top:1em;
+			padding-left:10em;
+			padding-right:10em;
+		}
+		/*GRID para el footer*/
+		.mi-grid{
+			width:100%; /*por ahora*/
+			height:60%;
+			display:grid;
+			grid-template-columns:1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			padding-top: 35px;
+		}
+		.enlace-footer{
+			padding:3px;
+			text-decoration:none;
+		}
+		#enlace{
+			text-decoration:none;
+			color:black;
+		}
+		.registro{
+			padding: 10px;
+			padding-top: 15px;
+			color:grey;
+			font-size:13px;
+		}
+
+    .fondo-verde{
+      background: lightgreen;
+      
+    }
+	</style>
+
+
+
+	<!-------------------------------------------------------------------->
+	<!---------------------------------------------------------------------->
+	
+	<div class="imagen-principal">
+	  <div class="texto-uno"> <h2>Ana. BlaBla. Casa</h2><h4>Comparte coche para llegar directamente a donde quieras ir. </h4></div>
+	  <div class="boton-buscar"><a routerLink="busqueda-coches">Buscar</a></div>
+	</div>
+	
+	<div class="publicador-oferta">
+		<img src="../../assets/img/hombre_conduciendo.jpg" alt="logotipo conductor" height="400" width="400"/>
+		<div class="publicador">
+			<div class="titulo-publicador"><h2>¿Adónde quieres viajar?</h2><br/><h5>Hagamos de este el viaje menos caro de tu vida.</h5></div>
+			<a class="boton-publicar" href="publicar">Publicar un viaje</a>
+		</div>
+	</div>
+
+	<!-------------------------------------------------------------------->
+	<!---------------------------------------------------------------------->
+  <div class="fondo-verde">
+	  <div class="viajes">
+		  <div class="contenedor">
+			  <div class="titulo-viajes"><h2>¿Adónde quieres viajar?</h2></div>
+			  <!-- boton que modifica la pagina-->
+			  <div class="mas-viajes" style="color:blue;">Ver los viajes mas frecuentes</div>
+		  </div>
+	  </div>
+	  <div class="viajes-dos">
+		  <div class="contenedor-dos">
+			  <a class="boton-viajar" href="#">Publicar un viaje</a>
+			  <a class="boton-viajar" href="#">Publicar un viaje</a>
+			  <a class="boton-viajar" href="#">Publicar un viaje</a>
+		  </div>
+	  </div>
+  </div>
+	<!-------------------------------------------------------------------->
+	<!-------------------------------------------------------------------->
+	<div class="contenedor">
+		<div class="titulo-cuerpo">
+			<div class="flotante_izquierda"><h2>Ve adonde quieras. Desde donde quieras.</h2></div>
+			<a class="flotante_derecha" href="#">Más informacion</a>
+		</div>
+		<div class="titulo-cuerpo-dos">
+			<div><h4>Práctico</h4>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+			<div><h4>Sencillo</h4>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+			<div><h4>Directo</h4>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+		</div>
+
+		<div class="titulo-cuerpo">
+			<div class="flotante_izquierda"><h2>Ventajas de viajar en BlaBlaCar</h2></div>
+		</div>
+		<div class="titulo-cuerpo-dos">
+			<div align="center"><img src="../../assets/img/icono.jpg" alt="icono" height="150" width="150"/><h4>Asegurado</h4>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+			<div align="center"><img src="../../assets/img/icono.jpg" alt="icono" height="150" width="150"/><h4>Comunidad</h4>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+			<div align="center"><img src="../../assets/img/icono.jpg" alt="icono" height="150" width="150"/><h4>Práctico</h4>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+		</div>
+
+		<div class="titulo-cuerpo">
+			<div class="flotante_izquierda"><h2>Carpooling with BlaBlaCar</h2></div>
+			<a class="flotante_derecha" href="#">Visitar BlaBlaLife</a>
+		</div>
+		<div class="titulo-cuerpo-dos">
+			<div><img src="../../assets/img/icono2.jpg" alt="icono" height="400" width="400"/><h5>5 playas de moda que no te puedes perder</h5>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+			<div><img src="../../assets/img/icono2.jpg" alt="icono" height="400" width="400"/><h5>5 planes de verano rurales</h5>Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino.</div>
+		</div>
+	</div>
+	<footer>
+		<div class="primer-footer">
+			<div class="contenedor">
+				<div class="mi-grid">
+					<div class="enlace-footer"><a href="#" id="enlace">¿Cómo compartir coche?</a></div>
+					<div class="enlace-footer"><a href="#" id="enlace">Seguro</a></div>
+					<div class="enlace-footer"><a href="#" id="enlace">Sobre nosotros</a></div>
+					<div class="enlace-footer"><a href="#" id="enlace">Preguntas frecuentes</a></div>
+					<div class="enlace-footer"><a href="#" id="enlace">Contacto</a></div>
+					<div class="enlace-footer"><a href="#" id="enlace">Terminos y condiciones</a></div>
+					<div class="enlace-footer"><a href="#" id="enlace">Prensa y medios</a></div>
+					<div class="enlace-footer"><a href="#" id="enlace">Empleo</a></div>
+				</div>
+				<div class="registro">
+					BlaBlaCar, 2019 Copyright
+				</div>
+			</div>
+		</div>
+		<div class="segundo-footer">
+			BlaBlaCar es la mejor aplicación del mundo para compartir coche. Con nosotros, puedes olvidarte del coche para salir de la ciudad. Conectamos a la gente para que pueda viajar directamente a cualquier lugar.
+		</div>
+	</footer>
+
+  <router-outlet></router-outlet>
+

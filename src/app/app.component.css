@@ -1,0 +1,46 @@
+
+		img{
+			max-width: 100%;
+			height:auto;
+		}
+  
+
+    #cabecera-fija {
+			background: white;
+			color: lightblue;
+			height: 80px;
+
+			width: 100%;
+			left:0;
+			top:0;
+			position:fixed;
+			/*border-bottom: solid 1px lightgrey;*/
+		}
+		#cabecera-fija a{
+			color: lightblue;
+		}
+
+		/*propiedades del logotipo-->*/
+		#logotipo{
+			float: left;
+			padding: 15px 0 0 20px;
+		}
+		/*navegacion*/
+		nav {
+			float: right;
+			padding-right: 20px;
+		}
+		nav ul{
+			margin: 0;
+			list-style: none;
+			padding-right: 20px
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+		}
+		nav ul li a{
+			display: block;
+			padding: 0 7px;
+			text-decoration:none;
+		}

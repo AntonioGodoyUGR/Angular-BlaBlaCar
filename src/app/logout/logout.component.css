@@ -1,0 +1,23 @@
+    .contenedor{
+			width: 980px;
+      height: 100%;
+			justify-content:center;
+			margin-left:auto;
+			margin-right:auto;
+      align-items:center;
+      text-align: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .boton-buscar{
+      border-radius: 18px;
+      background-color: lightblue;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      width: 120px;
+      height: 50px;
+      color:white;
+    }

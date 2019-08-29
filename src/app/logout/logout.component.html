@@ -1,0 +1,5 @@
+<div class="contenedor">
+  <button class="boton-buscar" (click)="logout()" *ngIf="authService.user | async">
+    Cerrar Sesion
+  </button>
+</div>

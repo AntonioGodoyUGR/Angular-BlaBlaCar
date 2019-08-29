@@ -1,0 +1,17 @@
+    .details li {
+      list-style: none;
+    }
+    li {
+        margin-bottom:10px;
+    }
+   .tital{
+       text-align:right;
+   }
+   .contant_i{
+        color: #631e1e;
+        border-bottom: 1px solid #cea7a7;
+   }
+
+   .contenedor{
+     margin-top:100px;
+   }

@@ -1,0 +1,133 @@
+
+    body{
+      text-decoration: none;
+    }
+      
+    .contenedor{
+			width: 980px;
+      height: 100%;
+			justify-content:center;
+			margin-left:auto;
+			margin-right:auto;
+      align-items:center;
+      text-align: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .casilla-buscar{
+      background-color: lightgrey;
+      text-align: center;
+      width: 600px;
+      height: 50px;
+      outline: none;
+      border-radius: 25px;
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+
+    .boton-buscar{
+      border-radius: 18px;
+      background-color: lightblue;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      width: 120px;
+      height: 50px;
+      color:white;
+      outline: none;
+    }
+
+    .titulo-buscar{
+      color:grey;
+    }
+
+    .lista-coches{
+      list-style: none;
+      width:400px;
+      height: 200px;
+      border: solid 2px;
+      border-radius: 20px;
+      border-color: lightgrey;
+      text-align: center;
+      margin-bottom: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .informacion-coche{
+      height:100%;
+      padding: 15px;
+      display:flex;
+		
+    }
+    .informacion-coche-dos{
+      height:100%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px;
+     
+    }
+    .precio{
+      height:100%;
+      width:40%;
+    }
+    .itinerario{
+      height:100%;
+      width:60%;
+    }
+    .ciudades{
+      height:50%;
+      width:100%;
+    }
+    .conductor{
+      height:50%;
+      width:100%;
+    }
+    .display-conductor{
+      font-size: 20px;
+      float:left;
+      margin: 10px;
+      color: grey;
+    }
+    .display-ciudad{
+      font-size: 20px;
+      float: left;
+      margin: 10px;
+      color: grey;
+    }
+    .display-precio{
+      font-size: 25px;
+      color: lightgreen;
+      float: right;
+      margin: 15px;
+    }
+
+    .display-ciudad-dos{
+      font-size: 20px;
+      margin: 10px;
+      color: grey;
+    }
+    .display-precio-dos{
+      font-size: 25px;
+      color: lightgreen;
+      margin: 15px;
+    }
+    .boton-reservar{
+      border-radius: 18px;
+      background-color: lightblue;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      width: 120px;
+      height: 50px;
+      color: white;
+      outline: none;
+    }
+    .info-reserva{
+      height:100%;
+      width:100%;
+      display:flex;
+    }

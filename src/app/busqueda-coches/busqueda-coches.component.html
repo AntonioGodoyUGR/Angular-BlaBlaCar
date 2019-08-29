@@ -1,0 +1,64 @@
+
+<div class="contenedor">
+  <div *ngIf="mostrarBusqueda">
+  <h1 class="titulo-buscar" ><b>¿A dónde quieres ir?</b></h1>
+
+
+  <form (ngSubmit)="findCars(newListForm.value)" [formGroup]="newListForm" *ngIf="!mostrarCoches">
+    <br/>
+   <!-- <label for="orig">orig</label>-->
+    <input class="casilla-buscar" type="text" formControlName="orig" placeholder="Origen">
+    <br/>
+   <!-- <label for="end">end</label>-->
+    <input class="casilla-buscar" type="text" formControlName="end" placeholder="Destino">
+    <br/>
+
+    <input class="boton-buscar" type="submit" [disabled]="!newListForm.valid" value="BUSCAR">
+  </form>
+  </div>
+
+  <div *ngIf="mostrarCoches">
+  
+    <ul>
+      <li class="lista-coches" *ngFor="let coche of coches$ | async">
+        <div (click)="selectCar(coche)"class="informacion-coche" *ngIf="!coche.lleno">
+
+          <div class="itinerario">
+            <div class="ciudades">
+              <div class="display-ciudad"> {{coche.horaini}}<p>     </p>  {{coche.orig}}</div>
+              <div class="display-ciudad"> {{coche.horafin}}<p>     </p>  {{coche.end}} </div>
+            </div>
+            <div class="conductor"><div class="display-conductor"> {{coche.conductor}} </div></div>
+          </div>
+          <div class="precio"><div class="display-precio"> {{coche.precio}}$ </div></div>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- Necesitamos el id del coche seleccionado para modificar el estado de lleno-->
+  <!-- Tambien es necesario el id del usuario para añadirlo a su lista de coches-->
+  <div *ngIf="mostrarInfo">
+    <div >
+      <br/>
+      <div class="informacion-coche-dos">
+        <h1 style="color:grey;">¿Quieres reservar este viaje? </h1>
+        <div class="info-reserva">
+          <div class="itinerario">
+                <div class="ciudades">
+                  <div class="display-ciudad-dos"> {{cochemostrar.horaini}}<p>     </p>  {{cochemostrar.orig}} <br> Clima: {{clima}}</div>
+                  <div class="display-ciudad-dos"> {{cochemostrar.horafin}}<p>     </p>  {{cochemostrar.end}} <br> Clima: {{clima2}}</div>
+                </div>
+          </div>
+          <div class="precio"><div class="display-precio-dos"> {{cochemostrar.precio}}$ </div></div>
+        </div>
+        <button (click)="seleccionado(cochemostrar)" class="boton-reservar"> Reservar </button>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+
+
+

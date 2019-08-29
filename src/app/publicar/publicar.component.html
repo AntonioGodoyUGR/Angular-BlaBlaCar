@@ -1,0 +1,23 @@
+<div class="contenedor">
+
+  <h1 style="color:grey"> ¿Estás preparando un viaje? </h1>
+  <form (ngSubmit)="newCar(newCarForm.value)" [formGroup]="newCarForm">
+    <input class="casilla-formulario" type="hidden" formControlName="id">
+    <br/>
+    <input class="casilla-formulario" type="hidden" formControlName="lleno">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="conductor" placeholder="conductor">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="precio" placeholder="precio">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="end" placeholder="ciudad destino">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="horafin" placeholder="hora de llegada">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="horaini" placeholder="hora de inicio">
+    <br/>
+    <input class="casilla-formulario" type="text" formControlName="orig" placeholder="ciudad de origen">
+    <br/>
+    <input class="boton-registrar" type="submit" [disabled]="!newCarForm.valid" value="Publicar">
+  </form>
+</div>
