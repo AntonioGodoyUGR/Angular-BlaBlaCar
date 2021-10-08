@@ -1,7 +1,7 @@
 
 <div class="contenedor">
 <h1 *ngIf="authService.user | async">Bienvenido {{ (authService.user | async)?.nombre }}!</h1>
- <h1 style="color:grey;"> Inicio de Sesión </h1>
+ <h1 style="color:#808080;"> Inicio de Sesión </h1>
 <div *ngIf="!(authService.user | async)">
   <input class="casilla-formulario" type="text" [(ngModel)]="email" placeholder="email">
   <br/>
