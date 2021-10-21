@@ -2,7 +2,8 @@
       text-decoration: none;
     }
       
-    .contenedor{
+    /* Original
+      .contenedor{
 			width: 980px;
       height: 100%;
 			justify-content:center;
@@ -35,5 +36,42 @@
       width: 120px;
       height: 50px;
       color: #ffffff;
+      outline: none;
+    }
+*/
+
+      .contenedor{
+			width: 980px;
+      height: 100%;
+			justify-content:right;
+			margin-left:auto;
+			margin-right:auto;
+      align-items:right;
+      text-align: right;
+      justify-content: right;
+      margin-top: 100px;
+    }
+
+    .casilla-formulario{
+      background-color: #d3d3d3;
+      text-align: right;
+      width: 400px;
+      height: 40px;
+      border-radius: 25px;
+      margin-bottom: 25px;
+      font-size: 20px;
+      outline: none;
+    }
+
+    .boton-registrar{
+      border-radius: 17px;
+      background-color:  #add8e6;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      width: 150px;
+      height: 100px;
+      color: #00000;
       outline: none;
     }
